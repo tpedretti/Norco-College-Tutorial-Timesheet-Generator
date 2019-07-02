@@ -13,13 +13,13 @@ namespace TimeTracker.Services
     class DBConnect : IDisposable
     {
         public static string fileName { get; set; } = "sqlInfo.json";
-        //public string ipAddr { get; set; } = "192.168.111.128";
-        public string ipAddr { get; set; } = "10.56.100.248";
+        //public string ipAddr { get; set; } = "";
+        public string ipAddr { get; set; } = "";
         public string ipPort { get; set; } = "3306";
         public string tsDatabase { get; set; } = "tsDB";
         public string userName { get; set; } = "tsUser";
         //public string password { get; set; } = "TempPass1";
-        public string password { get; set; } = "DBUserServices#NCC!2017";
+        public string password { get; set; } = "";
 
         //myJson jsonInfo;
         public MySqlConnection sqlConn = new MySqlConnection();
